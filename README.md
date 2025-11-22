@@ -2,7 +2,8 @@
 
 ## Live Demo
 You can see the project here:  
-[Click Here ]()
+[Click Here ](https://moaaz-hassan.github.io/World-Ranks-Country-Information-App/)
+
 ---
 
 ## Overview
@@ -19,9 +20,12 @@ The project is fully responsive and works smoothly on all devices:
 
 **Screenshots:**
 
-![Desktop View]()  
-![Tablet View]()  
-![Mobile View]()  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Moaaz-Hassan/World-Ranks-Country-Information-App/main/Macbook-Air-127.0.0.1.png" width="400px" />
+  <img src="https://raw.githubusercontent.com/Moaaz-Hassan/World-Ranks-Country-Information-App/main/iPad-Air-4-127.0.0.1.png" width="250px" />
+  <img src="https://raw.githubusercontent.com/Moaaz-Hassan/World-Ranks-Country-Information-App/main/Xiaomi-Mi-11i-127.0.0.1%20(1).png" width="150px" />
+</p>
+
 
 
 ---
