@@ -1,0 +1,330 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(20, 21, 23);
+
+}
+.main-title{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    line-height: 38px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.section-title{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);  
+}
+.section-title-sm{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);  
+}
+.info-text-md{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 17px;
+    color: rgb(130, 135, 145);  
+}
+.info-text-sm{ 
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+    color:rgb(140, 147, 160);  
+}
+.bg-gray {
+    background-color: rgb(40, 43, 48);
+    border-radius: 10px;
+    border-width: 1px;
+}
+.error-message {
+    color: #ff4e4e;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.active{
+    background-color:rgb(78, 128, 238) !important;
+    color: white !important;
+}
+.mg-10{
+    margin-bottom: 10px;
+}
+header{
+    background-image: url("./hero-image.jpg");
+    height:300px ;
+    background-position: center top;
+    background-repeat: no-repeat;      
+    background-size: cover ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+header img{
+    width: 20%;
+}
+.content{
+    z-index: 2;
+    box-shadow: 0 0 50px 70px  rgb(20, 21, 23);
+    padding: 0px 5%;
+}
+.content-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+input{
+    height: 50px;
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+input:focus{
+    border-color: rgb(78, 128, 238);
+    border-style: solid;
+    border-width: 1px;
+}
+select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+}
+select:focus{
+    border-color: rgb(78, 128, 238);
+    border-style: solid;
+    border-width: 1px;
+}
+.region{
+    width: fit-content;
+    height: 30px ;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.content-body{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.body-input{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    gap: 25px;
+}
+.body-output {
+    width: 75%;
+}
+.row{    
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    padding: 5px 0px;
+    align-items: center;
+    grid-auto-rows: min-content; 
+    margin-bottom: 10px;
+}
+.output-header{
+    border-bottom-style: solid;
+    border-bottom-color:  rgb(40, 43, 48);
+    border-bottom-width: 2px;
+}
+
+.country:hover{
+    cursor: pointer;
+    background-color: rgb(30, 31, 34); 
+}
+.row img{
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+.flag-col{
+    grid-column: 1;
+}
+.name-col{
+    grid-column: 2;
+}
+.population-col{
+    grid-column: 3;
+}
+.area-col{
+    grid-column: 4;
+}
+.region-col{
+    grid-column: 5;
+}
+
+.stop-scroling{
+    overflow-y: hidden !important;
+}
+.d-none{
+    display: none;
+}
+
+
+.countryDetails{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(20, 21, 23);
+    height: 100%;
+    overflow-y: auto; 
+    z-index: 100;
+}
+.Details-content *{
+    border-radius: 10px;
+}
+.Details-content{
+    background-color: rgb(20, 21, 23);
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(40, 43, 48);
+    transform: translateY(-50px);
+    text-align: center;
+
+}
+#imge-country{
+    width:30%;
+    transform: translateY(-50px);
+}
+#name{
+    margin-bottom: 20px;
+    transform: translateY(-10px);
+}
+
+.population-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.population-area *{
+    padding: 5px;
+}
+.Details-info{
+    border-radius: 0px;
+    border-top: solid;
+    border-color: rgb(40, 43, 48);
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Back{
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.Back:hover{
+    transform: scale(1.05);
+    background-color:rgb(78, 128, 238);
+    color: white;
+}
+#map{
+    color:rgb(78, 128, 238);
+    font-size: 25px;
+}
+
+.loder {
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgb(40, 43, 48);
+    border-top-color: rgb(78, 128, 238);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .content{
+        padding: 0px 3%;
+    }
+    .content-header{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    input , select{
+        width: 100%;
+    }
+    .content-body{
+        flex-direction: column;
+    }
+    .body-output , .body-input{
+        width: 100%;
+    }
+    .body-output {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .Details-content{
+        width: 85%;
+    }
+    .Details-content img{
+        width: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-title{
+        font-size: 20px;
+    }
+    .section-title{
+        font-size: 16px;
+    }
+    .info-text-md{
+        font-size: 14px;
+    }
+    .info-text-sm{
+        font-size: 12px;
+    }
+    header{
+        height: 250px;
+    }
+    header img{
+        width: 50%;
+    }
+    .content{
+        padding: 0px 20px;
+    }
+    .row img{
+        width: 80%;
+    }
+    .Details-content{
+        width: 95%;
+    }
+    .Details-content img{
+        width: 40%;
+    }
+
+}

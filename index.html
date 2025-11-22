@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./earth.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Worled Ranks</title>
+</head>
+<body >
+    <header>
+        <img src="./Logo.svg" alt="">
+    </header>
+    <div class="content ">
+        <div class="content-header">
+            <h2 class="info-text-md">Found <span id="numberOfcountries"></span> countries</h2>
+            <input class="bg-gray section-title-sm" placeholder="Search by country name" id="countryName" type="text">
+        </div>
+        <div class="content-body">
+            <div class="body-input">
+                <div>
+                    <p  class="info-text-md mg-10">Sort By</p>
+                    <select class="info-text-sm bg-gray" id="sort-by">
+                        <option value="Population">Population</option>
+                        <option value="Area">Area</option>
+                    </select>
+                </div>
+                <div>
+                    <p  class="info-text-md mg-10">Region</p>
+                    <div class="Region">
+                        
+                        <p class="info-text-sm bg-gray region" data-value="Americas">Americas</p>
+                        <p class="info-text-sm bg-gray region" data-value="Antarctic">Antarctic</p>
+                        <p class="info-text-sm bg-gray region" data-value="Africa">Africa</p>
+                        <p class="info-text-sm bg-gray region" data-value="Asia">Asia</p>
+                        <p class="info-text-sm bg-gray region" data-value="Europe">Europe</p>
+                        <p class="info-text-sm bg-gray region" data-value="Oceania">Oceania</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="body-output">
+                <div class="output-header row">
+                    <p class="info-text-md flag-col">Flag</p>
+                    <p class="info-text-md name-col">Name</p>
+                    <p class="info-text-md population-col">Population</p>
+                    <p class="info-text-md area-col">Area (km²)</p>
+                    <p class="info-text-md region-col">Region</p>			
+                </div>
+                <div id="output-countries">
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="countryDetails d-none">
+        <header>
+            <p class="bg-gray info-text-sm Back">← Back to Countries</p>
+            <img src="./Logo.svg" alt="">
+        </header>
+        <div class="Details-content">
+            <img  id="imge-country" src="" alt="">
+            <p class="main-title" id="name"></p>
+            <div class="population-area section-title">
+                <p class="bg-gray">Population <span id="population"></span></p>
+                <p class="bg-gray">Area (km²)<span id="area"></span></p>
+            </div>
+            <div class="Details-info info-text-md">
+                <p>Capital</p><p id="Capital"></p>
+            </div>
+            <div class="Details-info info-text-md">
+                <p>Subregion</p><p id="Subregion"></p>
+            </div>
+            <div class="Details-info info-text-md">
+                <p>map</p><a href="" id="map"><i class="fa-solid fa-map-location"></i></a>
+            </div>
+            <div class="Details-info info-text-md">
+                <p>Currencies</p><p id="Currencies"></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="loder d-none">
+    </div>
+   <script src="./index.js" type="module"></script> 
+</body>
+</html>
